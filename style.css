@@ -1,0 +1,99 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #212529;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.canvases {}
+
+.canvases__canvas {
+  display: block;
+  position: absolute;
+}
+
+.progress {
+  width: 300px;
+  height: 20px;
+  background-color: #212529;
+  /* border: 1px solid #343a40; */
+}
+
+.progress__strip {
+  width: 0%;
+  height: 100%;
+  background-color: #ced4da;
+}
+
+.interface {
+  display: flex;
+  flex-direction: column;
+}
+
+.interface__top {}
+
+.interface__message {
+  padding: 15px;
+  line-height: 1.5;
+  color: #ced4da;
+  text-align: center;
+}
+
+.interface__center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.interface__text-start {
+  padding: 0 15px;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #ced4da;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.interface__bottom {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.interface__progress {
+  width: 75vw;
+}
+
+.app {
+  height: 100%;
+  position: relative;
+}
+
+.app__canvases {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.app__interface {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.blue {
+  color: #4cc9f0;
+}
+
+.pink {
+  color: #f72585;
+}
